@@ -1,0 +1,62 @@
+<html>
+     <head>
+         <title>Pagina Dinamica</title>
+            	<font size=10>Pagina Dinamica</font>
+               </br>
+            </br>
+         Nombre
+         <input type="text" name="nombredelacaja">
+     </br>
+        </br>
+     Selecciona que eres xd
+         <script>
+             function modForm(valor){
+                formulario = document.getElementById("formulario");
+                if(valor=='NENE'){
+                   formulario.action="https://viridiana23.github.io/nene/.";
+                }
+                if(valor=='NENA'){
+                      formulario.action="https://viridiana23.github.io/nena/.";
+                }
+                if(valor=='JOVEN'){
+                     formulario.action="  https://viridiana23.github.io/jovenes2/";
+                }
+                if(valor=='JOVENCITA'){
+                     formulario.action="https://viridiana23.github.io/jovcencitas/.";
+                }
+                if(valor=='ADULTA'){
+                     formulario.action="https://viridiana23.github.io/adultos/.";
+                }
+                if(valor=='ADULTO'){
+                     formulario.action="https://viridiana23.github.io/adultas/.";
+                }
+            }
+        </script>
+     </head>
+     <body>
+          <form name="formulario" id="formulario" action = "" method="" >
+
+
+          <p>
+          <select name="escuela" id="escuela" onchange="modForm(this.value)">
+               <option value="">---</option>
+               <option value="NENE">Nene</option>
+               <option value="NENA">Nena</option>
+               <option value="JOVEN">Joven</option>a
+               <option value="JOVENCITA">Jovencita</option>
+               <option value="ADULTO">Adulto</option>
+               <option value="ADULTA">Adulta</option>
+          </select>
+          </p>
+          Selecciona tu genero:
+ </br>
+ </br>
+  <input type="radio" name="gender" value="male"> Masculino<br>
+  <input type="radio" name="gender" value="female"> Femenino<br>
+</br>
+
+
+          <input name="Enviar" type="submit" id="Enviar" value="Enviar" size="3" >
+      </form>
+    </body>
+</html>
